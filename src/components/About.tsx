@@ -10,7 +10,7 @@ const About = () => {
         <div className="containers">
         <div className="desc-container">
           <p className='desc'>
-            I am Rahil Bassim. I like to capture people's smile  and make them feel special. My passion is in photography. Also, I am a driven and ambitious MBA candidate at Kellogg School of Management, where I serve as an elected board member of the Kellogg Student Association. 
+            I am Rahil Bassim. I am passionate about capturing the spark of genuine moments, turning them into memories you can treasure forever. Photography for me is not just about capturing the correct shot but about narrating your unique story. Together, let’s craft pictures that will serve as windows into your world!
           </p>
         </div>
         <div className="photo-container">
