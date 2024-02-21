@@ -25,35 +25,58 @@
 //   "references": [{ "path": "./tsconfig.node.json" }]
 // }
 
+// {
+//   "compilerOptions": {
+//     "jsx": "react",
+//     "target": "es6",
+//     "lib": [
+//       "dom",
+//       "dom.iterable",
+//       "esnext"
+//     ],
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "strict": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "module": "esnext",
+//     "moduleResolution": "node",
+//     "resolveJsonModule": true,
+//     "isolatedModules": true,
+//     "noEmit": true,
+//     "allowJs": true,
+//     "removeComments": true,
+//     "sourceMap": true,
+//     "noResolve": false,
+//     "noImplicitAny": false
+//   },
+//   "include": [
+//     "src",
+//     "./node_modules/**/*"
+//   ]
+// }
+
 {
   "compilerOptions": {
-    "jsx": "react",
-    "target": "es6",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
     "skipLibCheck": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    //this Line
+    "strict": false,
+    //this Line
     "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "allowJs": true,
-    "removeComments": true,
-    "sourceMap": true,
-    "noResolve": false,
-    "noImplicitAny": false
+    "jsx": "react-jsx"
   },
-  "include": [
-    "src",
-    "./node_modules/**/*"
-  ]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
-
